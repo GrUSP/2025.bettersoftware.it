@@ -1,0 +1,57 @@
+- name: David Jonathan Ross
+  hour:
+  image: img/2018/david.png
+  twitter: djrrb
+  bio: "David Jonathan Ross draws letters of all shapes and sizes for custom and retail typeface designs. A native of Los Angeles, He began drawing typefaces at Hampshire College and joined The Font Bureau in 2007 where he honed his bézier-wrangling skills. Now he publishes visually imaginative and technically advanced designs at his own foundry, <a href='https://djr.com/'>DJR</a> , as well as working on projects with Type Network and developing display faces for his Font of the Month Club . You’ll find him in Western Massachusetts with his partner Emily and their two dogs, Sophie and Lily."
+  works: You can see his latest works on <a href="https://djr.com//">his website</a> and follow him on <a href="https://twitter.com/djrrb/">twitter</a>.
+  title:
+  abstract:
+  video:
+- name: Riccardo Olocco
+  hour:
+  image: img/2018/riccardo.png
+  twitter: castfoundry
+  bio: "Riccardo is a type designer and member of CAST – Cooperativa Anonima Servizi Tipografici. Besides designing, he is doing a PhD at the University of Reading, faculty of Typography and Graphic Design. His research concerns 15th-century Venetian roman types and he combines use of bibliographical knowledge with analysis of letterforms. In 2014 he took an MA in Typeface Design at the University of Reading where he was introduced to so-called non-Latin types and fell in love with Bengali script. Prior to this, from the late 1990s, he freelanced as a type and graphic designer in Milan and elsewhere in northern Italy. From 2009–2013 he was a lecturer in typography at the University of Bolzano. He currently lives between Bolzano and London."
+  works: You can see his latest works on <a href="http://www.riccardolocco.com/">his website</a> and follow him on <a href="https://twitter.com/castfoundry/">twitter</a>.
+  title:
+  abstract:
+  video:
+- name: tba
+  hour:
+  image: img/speakers-plc.png
+  twitter: false
+  bio:
+  works:
+  title:
+  abstract:
+  video:
+- name: Bruno Maag and Tom Foley
+  title: "How to choose a good font with Bruno Maag and Tom Foley"
+  image: /img/2017/ws/bruno.png
+  twitter: bruno_maag
+  duration: 2 days
+  when: 7th and 8th of June 2017
+  where: "The workshop will take place at: Biblioteca Comunale di Faenza (Ground Floor)<br/>Via Manfredi n. 14<br/>Faenza (RA)"
+  map: https://www.google.it/maps/place/Via+Manfredi,+14,+48018+Faenza+RA/data=!4m2!3m1!1s0x132b4e21bdacf365:0x7676e3456dac65ce?sa=X&ved=0ahUKEwj89vOhguTJAhXI7xQKHQJ-ANsQ8gEIHjAA
+  anchor: maag
+  url: ws-fontchoosing.html
+- name: Richard Rutter
+  title: "Responsive Web Typography with Richard Rutter"
+  image: /img/2017/ws/richard.png
+  twitter: clagnut
+  duration: 1 day
+  when: 8th of June 2017
+  where: "The workshop will take place at: Palazzo Naldi / Fondazione (1st Floor) Via San Giovanni Bosco n. 1 - Faenza (RA)"
+  map: https://www.google.com/maps/place/Via+san+Giovanni+Bosco,+1/@44.2832168,11.8849821,16z
+  anchor: rutter
+  url: ws-webtypography.html
+- name: Luca Barcellona
+  title: "A Capital Importance: a Calligraphy workshop with Luca Barcellona"
+  image: /img/2017/ws/barcellona.png
+  twitter: barcellonaluca
+  duration: 2 days
+  when: 7th and 8th of June 2017
+  where: "The workshop will take place at: Palazzo Naldi / Fondazione (1st Floor) Via San Giovanni Bosco n. 1 - Faenza (RA)"
+  map: https://www.google.com/maps/place/Via+san+Giovanni+Bosco,+1/@44.2832168,11.8849821,16z
+  anchor: barcellona
+  url: ws-calligraphy.html

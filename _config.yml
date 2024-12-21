@@ -1,0 +1,32 @@
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title
+conference-name: "Better Software"
+conference-title: "Green Software e Sustainable IT"
+conference-motto: "La conferenza più eclettica sul mondo IT!"
+conference-domain: "bettersoftware.it"
+conference-email: bettersoftware@grusp.org
+conference-x: better_software
+city: "Bologna"
+date: "11 Ott"
+year: 2024
+tickets: true
+tickets-eb: grusp/bettersoftware-2024
+tickets-eb-link: http://ti.to/grusp/bettersoftware-2024
+tickets-eb-height: 950px
+speakers: true
+talks: true
+workshops: false
+scholarships: true
+schedule: true
+sponsor: true
+location-stay: false
+cfs: false
+cfs-end: "7 Settembre 2024"
+cfs-link: https://sessionize.com/bettersoftware-2024
+rdiscount:
+  extensions: [smart]
+plugins:
+  - jekyll-sitemap
+kramdown:
+  input: GFM

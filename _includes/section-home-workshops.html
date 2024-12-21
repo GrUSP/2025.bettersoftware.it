@@ -1,0 +1,31 @@
+<div class="section" id="speakers">
+		<div class="wrapper">
+			<h2>Workshops</h2>
+
+			<ul id="speakers-list">
+        {% for workshop in site.data.workshops %}
+
+				{% if workshop.title != false %}
+        <li>
+					<a href="{{ workshop.url }}">
+						<img src="{{ workshop.image }}">
+						<span>{{ workshop.title }}</span>
+					</a>
+				</li>
+
+				{% else %}
+				<li>
+					<img src="/img/speaker-plc.png">
+					<span>To be<br>announced<br></span>
+				</li>
+        {% endif %}
+
+				{% endfor %}
+
+			</ul>
+
+			{% if false %}
+				<div class="more">&hellip;more workshops to be announced soon!</div>
+			{% endif %}
+		</div>
+	</div>

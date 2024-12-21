@@ -1,0 +1,18 @@
+<div class="section" id="workshops">
+	<div class="wrapper">
+		<h2>Workshops</h2>
+		<h3>June 5-6, 2019</h3>
+        |
+        {% for workshop in site.data.workshops %}
+            {% if workshop.title != false %}
+                <a href="#workshop-{{ workshop.anchor }}" class="sponsor-tooltip workshop-image" data-toggle="tooltip" data-placement="top" data-title="{{ workshop.title }}" data-original-title="" title="{{ workshop.title }}">{{ workshop.name }}</a> |
+            {% endif %}
+        {% endfor %}
+		<div id="workshops-abstract">
+            {% include workshop/workshop-stamperia.html %}
+            {% include workshop/workshop-maag.html %}
+            {% include workshop/workshop-glyphs.html %}
+            {% include workshop/workshop-dengo.html %}
+		</div>
+	</div>
+</div>

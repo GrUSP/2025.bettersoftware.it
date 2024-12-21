@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title> {% if page.ttl %} {{page.ttl}} | {% endif %} {{ site.conference-name }} Conference - {{ site.city }}, {{site.date}} {{site.year}} - {{site.title}}</title>
+
+	<meta name="description" content="{{ site.conference-name }}: {{ site.conference-motto }}">
+	<meta name="author" content="Francesco Fullone, GrUSP.org">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="image_src" href="/img/logo_ke.png" />
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NF8NB5DC');</script>
+	<!-- End Google Tag Manager -->
+	
+	<!--
+	/* @license
+	 * MyFonts Webfont Build ID 2367569, 2012-09-18T13:05:09-0400
+	 *
+	 * The fonts listed in this notice are subject to the End User License
+	 * Agreement(s) entered into by the website owner. All other parties are
+	 * explicitly restricted from using the Licensed Webfonts(s).
+	 *
+	 * You may obtain a valid license at the URLs below.
+	 *
+	 * Webfont: Pluto Sans Bold by HVD Fonts
+	 * URL: http://www.myfonts.com/fonts/hvdfonts/pluto-sans/bold/
+	 * Licensed pageviews: 10,000
+	 *
+	 * Webfont: Pluto Sans Light by HVD Fonts
+	 * URL: http://www.myfonts.com/fonts/hvdfonts/pluto-sans/light/
+	 * Licensed pageviews: 10,000
+	 *
+	 *
+	 * License: http://www.myfonts.com/viewlicense?type=web&buildid=2367569
+	 * Webfonts copyright: Copyright (c) 2012 by Hannes von Doehren. All rights reserved.
+	 *
+	 * © 2012 Bitstream Inc
+	*/
+
+	-->
+	<meta property="og:title" content="{% if page.ttl %} {{page.ttl}} {% else %} {{ site.conference-name }} Conference {{site.year}} {% endif %}" />
+    <meta property="og:description" content="{% if page.descr %} {{page.descr}} {% else %} 8 Great speakers, 3 sustainability pillars, 1 thousand reasons. Buy your ticket now! {% endif %}" />
+	<meta property="og:image" content="https://{{site.year}}.{{ site.conference-domain }}/img/ke_logo_og.jpg" />
+	<meta property="og:url" content="https://{{site.year}}.{{ site.conference-domain }}/" />
+
+	<link rel="stylesheet" href="css/layout.css?ver=5">
+	<link rel='stylesheet' href='css/humane/libnotify.css'/>
+
+	<script src="js/prefixfree.js"></script>
+
+    <!--script type="text/javascript" src="//use.typekit.net/zmj5iri.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script-->
+</head>
+<body class="{{ page.title }}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF8NB5DC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="header">
+    	<div class="wrap">
+    		<div id="logo"><h1><a href="/"><span>{{ site.conference-name }}</span></a></h1></div>
+    		<a class="toggleMenu" href="#">Menu</a>
+    		<div id="nav-primary">
+    			<ul>
+                    {% if site.cfs %}
+                        <li><a href="{{ site.cfs-link }}" target="_blank">Call For Paper</a></li>
+                    {% endif %}
+
+
+                    {% if site.speakers %}
+                        <li><a href="speakers.html">Speaker</a></li>
+                    {% endif %}
+
+                    {% if site.schedule %}
+                        <li><a href="schedule.html">Programma</a></li>
+                    {% endif %}
+
+                    {% if site.workshops %}
+                        <li><a href="workshops.html">Workshop</a></li>
+                    {% endif %}
+
+                    {% if site.tickets %}
+                        <li><a href="/#tickets">Biglietti</a></li>
+                    {% endif %}
+
+                    <li><a href="location.html">Dove e come</a></li>
+                    
+                    {% if site.sponsor %}
+                        <li><a href="#sponsor" class="scroll">Sponsor</a></li>
+                    {% endif %}
+
+                    {% if site.scholarships %}
+                        <li><a href="scholarship.html">Borse di Studio</a></li>
+                    {% endif %}
+                    
+                    <li><a href="#newsletter" class="scroll">Newsletter</a></li>
+                    <li><a href="#contacts" class="scroll">Contatti</a></li>
+
+    			</ul>
+
+    		</div>
+    	</div>
+    </div>
+
+
+    {{ content }}
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?v=1"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        	$('.sponsor-tooltip').tooltip();
+        });
+
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        });
+
+        $(".toggleMenu").click(function(){
+            $("#nav-primary").toggleClass('hover');
+        });
+
+        $("#nav-primary li a").click(function(){
+            $("#nav-primary").toggleClass('hover');
+        });
+
+        var num = 0; //number of pixels before modifying styles
+
+    </script>
+
+    </body>
+</html>

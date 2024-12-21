@@ -1,0 +1,84 @@
+greatprimer:
+pica:
+  - name: Daruma Consulting
+    href: http://www.darumahq.it/?utm_source=bsw
+    img: /img/2024/s/daruma.svg
+    title: "Sustainable IT e Green Software consulting."
+bourgeois:
+  - name: Credem
+    href: https://www.credem.it/
+    img: /img/2024/s/credem.svg
+    title: "Credem Banca"
+
+#  - name: klim
+#    href: http://klim.co.nz/?utm_source=kerningconf
+#    img: /img/2018/s/klim.svg
+#    title: "The Klim Type Foundry (Klim) was founded in 2005 by type designer Kris Sowersby. Klim is based in Wellington, New Zealand and sells its typefaces directly through klim.co.nz."
+#  - name: bole
+#    href: https://www.bolewine.com/it/?utm_source=kerningconf
+#    img: /img/2018/s/bole.png
+#    title: "Bolé, Romagna DOC Spumante, contains the essence of a new vision. Effervescent, unstoppable and engaging bubbles that radiate a courageous energy and the power of imagination."
+
+
+brevier:
+  - name: Seeweb
+    href: https://www.seeweb.it/
+    img: /img/2024/s/seeweb.svg
+    title: "Seeweb"
+
+  - name: Workwave
+    href: https://www.workwave.com/
+    img: /img/2024/s/workwave.svg
+    title: "Workwave"
+
+#  - name: zetafonts
+#    href:  https://www.zetafonts.com
+#    img: /img/2018/s/zetafonts.svg
+#    title:  Zetafonts a font foundry created by Francesco Canovaro, Cosimo Lorenzo Pancini and Debora Manetti.
+
+minion:
+  - name: Miaplatform
+    href: https://mia-platform.eu/it/
+    img: /img/2024/s/miaplatform.png
+    title: "Mia-Platform"
+
+  - name: Stickermule
+    href: https://www.stickermule.com/eu/uses?utm_source=sponsorship&utm_medium=referral&utm_campaign=AproposSrl
+    img: //grusp.org/img/media-partners/stickermule.svg
+    title: "StickerMule"
+
+#  - name: serif
+#    href:  https://affinity.serif.com/
+#    img: /img/2018/s/serif.svg
+#    title: Affinity is next-generation photo editing and graphic design for creative professionals on Mac, Windows and iOS. Free trials.
+
+media:
+  - name: Codemotion
+    href: https://codemo.tech/partners
+    img: https://partners.grusp.org/img/partners/codemotion.png
+    title: "Codemotion"
+
+  - name: EventiTech_it
+    href: https://eventitech.it/
+    img: https://partners.grusp.org/img/partners/eventitech.svg
+    title: "EventiTech.it"
+
+  - name: HTML_it
+    href: https://www.html.it/
+    img: /img/2024/s/media_htmlit.png
+    title: "HTML.it"
+
+  - name: krazydev_
+    href: https://krazydev.it/
+    img: https://partners.grusp.org/img/partners/krazydev.svg
+    title: "krazydev Friuli Venezia Giulia"
+
+  - name: Product Management Day
+    href: https://www.productmanagementday.com/
+    img: https://partners.grusp.org/img/partners/productmanday.svg
+    title: "Product Management Day"
+
+  - name: TheRedCode
+    href: https://www.theredcode.it/
+    img: /img/2024/s/theredcode.png
+    title: "The Red Code"

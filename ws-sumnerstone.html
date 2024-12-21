@@ -1,0 +1,22 @@
+---
+layout: layout
+title: page-conference
+ttl: "LetterBody | LetterSoul with Sumner STONE"
+descr: "LetterBody | LetterSoul with Sumner STONE"
+---
+
+<div class="section" id="workshops">
+	<div class="wrapper">
+		<h2>Workshops</h2>
+		<h3>June 7th & 8th, 2017</h3>
+		<div id="workshops-abstract">
+            {% include workshop/workshop-stone.html %}
+		</div>
+	</div>
+</div>
+{% if site.tickets %}
+  {% include section-tickets.html %}
+{% endif %}
+{% include section-sponsors.html %}
+{% include section-newsletter.html %}
+{% include section-contact.html %}

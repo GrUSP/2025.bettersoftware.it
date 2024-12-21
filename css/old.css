@@ -1,0 +1,1889 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+/* @license
+ * MyFonts Webfont Build ID 2367569, 2012-09-18T13:05:09-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Pluto Sans Bold by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/pluto-sans/bold/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Pluto Sans Light by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/pluto-sans/light/
+ * Licensed pageviews: unspecified
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2367569
+ * Webfonts copyright: Copyright (c) 2012 by Hannes von Doehren. All rights reserved.
+ * 
+ * © 2012 Bitstream Inc
+*/
+@font-face {
+  font-family: 'PlutoSansBold';
+  src: url('webfonts/242051_0_0.eot');
+  src: url('webfonts/242051_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/242051_0_0.woff') format('woff'), url('webfonts/242051_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PlutoSansLight';
+  src: url('webfonts/242051_1_0.eot');
+  src: url('webfonts/242051_1_0.eot?#iefix') format('embedded-opentype'), url('webfonts/242051_1_0.woff') format('woff'), url('webfonts/242051_1_0.ttf') format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  min-height: 100%;
+  background: #272424;
+}
+body {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: #f8f7f4;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+body.home {
+  background: #3658a7;
+}
+a {
+  text-decoration: none;
+  color: #3658a7;
+}
+b {
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+hr {
+  margin: 50px auto 48px auto;
+  width: 62px;
+  border: 0;
+  border-top: 1px solid #ffffff;
+}
+h2 {
+  color: #3658a7;
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 0 0 30px 0;
+  letter-spacing: 1px;
+}
+.wrapper {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  position: relative;
+  padding: 0 15px;
+}
+#header {
+  z-index: 20;
+  *zoom: 1;
+  background: url('../img/bg_body.png') top left repeat-x #f8f7f4;
+}
+#header:before,
+#header:after {
+  content: "";
+  display: table;
+}
+#header:after {
+  clear: both;
+}
+#header #logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header #logo a {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background: url('../img/ke_logo.png') top left no-repeat;
+}
+#header #logo a span {
+  display: none;
+}
+#header .toggleMenu {
+  float: right;
+  padding: 15px 15px 13px 10px;
+  color: #f8f7f4;
+  text-transform: uppercase;
+}
+#header .pastEditionMenu {
+  display: none;
+}
+#header #nav-primary {
+  text-align: left;
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  display: none;
+}
+#header #nav-primary.hover {
+  display: block;
+}
+#header #nav-primary ul {
+  border-top: 1px solid #e5e5e5;
+}
+#header #nav-primary li {
+  background: #f8f7f4;
+  border-bottom: 1px solid #e5e5e5;
+}
+#header #nav-primary li a {
+  display: block;
+  color: #231f20;
+  padding: 15px 10px;
+}
+.section {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+#speakers {
+  background-color: #f8f7f4;
+  padding: 30px 0;
+}
+#speakers .more {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  color: #4c4345;
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#speakers #speakers-list {
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+#speakers #speakers-list.keynote {
+  margin-left: 33.33333333%;
+  padding: 0 20px;
+}
+#speakers #speakers-list.workshop {
+  margin-left: 33.33333333%;
+  padding: 0 20px;
+}
+#speakers #speakers-list li {
+  display: inline;
+  float: left;
+  width: 50%;
+  margin: 0 ;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0 10px;
+}
+#speakers #speakers-list li:first-of-type {
+  clear: both;
+}
+#speakers #speakers-list img {
+  width: 100%;
+  display: block;
+  margin: 0 0 20px 0;
+}
+#speakers #speakers-list span {
+  display: block;
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: #231f20;
+  padding-bottom: 10px;
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 0 0 30px 0;
+}
+#tickets {
+  background-color: #302c2d;
+  padding: 30px 0 30px 0;
+}
+#tickets h2 {
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  background: none;
+  margin: 0 0 20px 0;
+}
+#tickets p {
+  display: inline;
+  float: left;
+  width: 66.66666667%;
+  margin: 0 0%;
+  margin-left: 16.66666667%;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+#tickets #eventbrite-link {
+  display: inline-block;
+  background: #f8f7f4;
+  padding: 10px 20px;
+  color: #302c2d;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+#tickets #eventbrite-link:hover {
+  background: #302c2d;
+  color: #f8f7f4;
+}
+#tickets #eventbrite-iframe {
+  display: none;
+}
+#sp {
+  padding: 60px 0 30px 0;
+  min-height: 200px;
+  background-color: #ffffff;
+  /*&:after {
+		bottom:-43px;
+		min-height:43px;
+		background: url("../img/bg-sponsor.png") left no-repeat;
+		background-size: 100% 100%;
+	}*/
+}
+#sp h3.greatprimer {
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  clear: both;
+}
+#sp h3.pica {
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  clear: both;
+}
+#sp h3.bourgeois {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  clear: both;
+}
+#sp h3.brevier {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  clear: both;
+}
+#sp h3.minion {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  clear: both;
+}
+#sp h3.media {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  clear: both;
+}
+#sp .s-block {
+  margin: 25px 0;
+}
+#sp .s-block img {
+  padding: 5px 10px;
+  width: 48%;
+}
+#sp .s-block.pica img {
+  width: 70%;
+}
+#sp .s-block.great img {
+  width: 100%;
+}
+#sp .become-sponsor {
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #302c2d;
+}
+#sp .become-sponsor a {
+  color: #3658a7;
+}
+#calling {
+  padding: 30px 0;
+  min-height: 200px;
+  background-color: #efeeeb;
+}
+#calling h2 {
+  color: #231f20;
+}
+#calling #subscription-box {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  border: 8px solid #cccccc;
+  height: 59px;
+}
+#calling #subscription-box input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+#calling #subscription-box input[type=email] {
+  display: inline;
+  float: left;
+  width: 66.66666667%;
+  margin: 0 ;
+  box-shadow: inset 0px 2px 5px #e5e5e5;
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 10px;
+  line-height: 1.5em;
+  height: 43px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  margin: 0;
+  padding: 0px 0px 0px 10px;
+  border: 1px solid #cccccc;
+}
+#calling #subscription-box input[type=email]:focus {
+  border: 1px solid #3658a7;
+  outline: none;
+}
+#calling #subscription-box input[type=submit] {
+  display: inline;
+  float: left;
+  width: 33.33333333%;
+  margin: 0 ;
+  display: inline-block;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  background: #c6301a;
+  color: #ffffff;
+  margin: 0;
+  padding: 0 5px;
+  border: 0;
+  height: 43px;
+  border: 1px solid #3658a7;
+  text-transform: uppercase;
+}
+#contact {
+  padding: 30px 0;
+  min-height: 200px;
+  background-color: #302c2d;
+  font-size: 13px;
+}
+#contact h2 {
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding-bottom: 20;
+  margin: 0 0 20px 0;
+}
+#contact h3 {
+  color: #3658a7;
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0 0 20px 0;
+}
+#contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+#contact a:hover {
+  color: #74676a;
+}
+#contact .social a {
+  display: block;
+}
+#contact li {
+  margin: 0 0 20px 0;
+  width: 48%;
+  display: inline-block;
+}
+#ribbon {
+  clear: both;
+  margin: 0 auto;
+  width: 168px;
+  height: 156px;
+  background: #f8f7f4;
+}
+#ribbon span {
+  display: block;
+  width: 62px;
+  text-transform: uppercase;
+}
+#ribbon span#where {
+  margin: auto;
+  padding: 26px 0 10px 0;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  border-bottom: 1px solid #3658a7;
+  text-align: center;
+}
+#ribbon span#where i {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+  display: block;
+  letter-spacing: 3px;
+}
+#ribbon span#season {
+  margin: auto;
+  padding: 10px 0 0px 0;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+#ribbon span#year {
+  margin: auto;
+  padding: 0px 0 13px 0;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+}
+#what {
+  padding: 30px 0 0 0 ;
+}
+#what h1 {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-height: 113px;
+  height: 113px;
+  background: url('../img/logo_ke.png') center bottom no-repeat;
+  background-size: contain;
+}
+#what h1 span {
+  display: none;
+}
+#what h2 {
+  padding-top: 20px;
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#what h2 b {
+  color: #231f20;
+  font-size: 16px;
+  line-height: 16px;
+}
+#what h3 {
+  padding-top: 20px;
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 31px;
+  line-height: 1em;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#what .short {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  color: #ffffff;
+  text-transform: none;
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+#what .abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  padding: 30px 0;
+}
+#what .abstract .intro {
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 21px;
+}
+#what .abstract p.col {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  text-transform: none;
+}
+#location {
+  padding: 30px 0 70px 0;
+  background-color: #efeeeb;
+}
+#location-abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+#location-abstract .col {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  font-size: 14px;
+}
+#location-abstract .intro {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 21px;
+  color: #231f20;
+  padding: 0 0 30px 0;
+}
+#location-abstract .intro b {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#location-abstract h3 {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+#location-abstract h3 b {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#location-abstract dl dt {
+  color: #3658a7;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#location-abstract dl dd {
+  margin-bottom: 20px;
+}
+#stay {
+  padding: 30px 0 70px 0;
+  background-color: #efeeeb;
+}
+#stay img {
+  width: 80%;
+}
+#stay-abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+#stay-abstract .col {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  margin: 0 0 20px 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+#stay-abstract .col:first-child {
+  text-align: center;
+}
+#stay-abstract .col:last-child {
+  float: right;
+}
+#stay-abstract h3 {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+#stay-abstract h3 b {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#stay-abstract dl {
+  margin-top: 30px;
+}
+#stay-abstract dl dt {
+  color: #3658a7;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#stay-abstract dl dd {
+  margin-bottom: 20px;
+}
+#stay-abstract dl dd a[href^=tel] {
+  color: inherit;
+}
+#stay-abstract dl + h3 {
+  margin-top: 60px;
+}
+#venue {
+  padding: 30px 0;
+  background-color: #f8f7f4;
+}
+#venue img {
+  width: 80%;
+}
+#venue-abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+#venue-abstract .col {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  margin: 0 0 20px 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+#venue-abstract .col a {
+  color: #3658a7;
+  text-decoration: none;
+}
+#venue-abstract .col a:hover {
+  color: #302c2d;
+}
+#venue-abstract .col:first-child {
+  text-align: center;
+}
+#venue-abstract .col:last-child {
+  float: right;
+}
+#venue-abstract .col h3 {
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+#venue-abstract .col h3 b {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#venue-abstract .col dl dt {
+  color: #3658a7;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#venue-abstract .col dl dd {
+  margin-bottom: 20px;
+}
+#conference,
+#about-us {
+  padding: 30px 0;
+  background-color: #f8f7f4;
+  margin-top: 50px;
+}
+#conference h2,
+#about-us h2 {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+#conference h3,
+#about-us h3 {
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+#conference #more .speaker .info,
+#about-us #more .speaker .info {
+  padding-top: 20px;
+}
+#conference .more,
+#about-us .more {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  color: #4c4345;
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#conference-abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  margin: 40px 0;
+}
+#about-us-crew {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  margin: 40px 0;
+}
+#about-us-crew .session .speaker {
+  width: 100%;
+}
+#conduction {
+  padding: 30px 0;
+  background-color: #f8f7f4;
+  margin-top: 50px;
+}
+#conduction-longtext {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+#conduction-longtext .col {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  font-size: 14px;
+}
+#conduction-longtext .intro {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 21px;
+  color: #231f20;
+  padding: 0 0 30px 0;
+}
+#conduction-longtext .intro b {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#conduction-longtext h3 {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin: 30px 0 20px 0;
+}
+#conduction-longtext p {
+  margin: 0 0 0.75em 0;
+}
+#conduction-longtext p b {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#conduction-longtext a {
+  text-decoration: underline;
+  color: inherit;
+}
+#workshops {
+  padding: 30px 0;
+  background-color: #f8f7f4;
+  margin-top: 50px;
+}
+#workshops h2 {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+#workshops h3 {
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+#workshops .workshop-image {
+  width: 100%;
+}
+#workshops .workshop-video {
+  width: 100%;
+}
+#workshops-abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  margin: 40px 0;
+}
+.session {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+.session .speaker {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+.session .speaker .image {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+.session .speaker .name {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  min-height: 30px;
+  text-align: center;
+}
+.session .speaker .twitter {
+  min-height: 40px;
+  padding: 0 0 0 30px;
+  text-align: left;
+  vertical-align: middle;
+}
+.session .speaker .twitter a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.session .speaker .twitter a:before {
+  content: url('../img/twitter_ico.png');
+  position: absolute;
+  top: 2px;
+  left: -30px;
+  vertical-align: middle;
+}
+.session .speaker .url {
+  min-height: 40px;
+  text-align: left;
+  vertical-align: middle;
+}
+.session .speaker .bio {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin: 0 0 20px 0;
+  text-align: justify;
+}
+.session .speaker .work {
+  text-align: left;
+}
+.session .topic {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+.session .topic .title {
+  font-family: PlutoSansBold, serif;
+  font-size: 21px;
+  line-height: 1.2em;
+  margin: 0;
+}
+.session .topic .abstract {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.session .topic .abstract .intro {
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 21px;
+}
+.session .topic .abstract p {
+  margin: 0 0 0.75em 0;
+  text-align: justify;
+}
+.session .meta .duration {
+  font-family: PlutoSansBold, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.session .meta .where {
+  margin: 20px 0;
+  padding-top: 20px;
+  border-top: 1px solid #E4E4E4;
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.session .meta .where b {
+  font-family: PlutoSansBold, serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.session .meta .buy {
+  background: #3658a7;
+  display: inline-block;
+  margin: 10px 0;
+}
+.session .meta .buy a {
+  display: block;
+  padding: 10px 10px 8px 15px;
+  color: #f8f7f4;
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.session .meta .buy a b {
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #231f20;
+}
+.results .topic .abstract p {
+  min-height: 70px;
+}
+#schedule {
+  padding: 30px 0;
+  background-color: #f8f7f4;
+  margin-top: 50px;
+}
+#schedule h2 {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+#schedule h3 {
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+#schedule .schedule-session {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+#schedule .schedule-session .hour {
+  font-family: PlutoSansLight, serif;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+#schedule .schedule-session .image {
+  display: none;
+  padding: 0 20px;
+}
+#schedule .schedule-session .image img {
+  width: 100%;
+  max-width: 183px;
+}
+#schedule .schedule-session a {
+  color: inherit;
+}
+#schedule .schedule-session a .title {
+  color: #3658a7;
+}
+#schedule .schedule-session a .title:hover {
+  text-decoration: underline;
+}
+#schedule .schedule-session a .name:hover {
+  text-decoration: underline;
+}
+#schedule .schedule-session .topic .title {
+  font-family: PlutoSansBold, serif;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+@media screen and (min-width: 481px) {
+  .wrapper {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 ;
+    margin-left: 16.66666667%;
+  }
+  #what .short {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 ;
+    text-align: center;
+    margin-left: 16.66666667%;
+  }
+  #what .abstract p.col {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 0%;
+    padding: 0 5px;
+  }
+  #what h3 {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 24px;
+    line-height: 1em;
+  }
+  #speakers #speakers-list li {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+    display: inline-block;
+    float: none;
+    margin: 0 0 0 -4px;
+  }
+  #tickets .wrapper {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+  }
+  #tickets #eventbrite-link {
+    display: none;
+  }
+  #tickets #eventbrite-iframe {
+    max-width: 1000px;
+    margin: 0px auto;
+    height: 620px !important;
+    display: block;
+  }
+  #sp .s-block {
+    margin: 15px 0;
+  }
+  #sp .s-block img {
+    width: auto;
+  }
+  #sp .s-block.great img {
+    max-width: 480px;
+  }
+  #sp .s-block.pica img {
+    max-width: 320px;
+  }
+  #sp .s-block.bourgeois img {
+    max-width: 235px;
+  }
+  #sp .s-block.brevier img {
+    max-width: 190px;
+  }
+  #sp .s-block.minion img {
+    max-width: 160px;
+  }
+  #sp .s-block.media img {
+    max-width: 140px;
+  }
+  #calling #subscription-box {
+    display: inline;
+    float: left;
+    width: 83.33333333%;
+    margin: 0 ;
+    margin-left: 8.33333333%;
+  }
+  #calling #subscription-box input[type=email] {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+  #contact .wrapper {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+  }
+  #contact .col {
+    display: inline;
+    float: left;
+    width: 33.33333333%;
+    margin: 0 ;
+    text-align: left;
+    padding: 30px 20px 0 20px;
+  }
+  #contact .social a {
+    display: block;
+    padding-left: 40px;
+  }
+  #contact li {
+    margin: 0 0 20px 0;
+    width: auto;
+  }
+  #contact li .twitter {
+    background: url('/img/twitter.png') center left no-repeat;
+  }
+  #contact li .facebook {
+    background: url('/img/facebook.png') center left no-repeat;
+  }
+  #contact li .mail {
+    background: url('/img/kerning.png') center left no-repeat;
+  }
+  #contact li .about {
+    background: url('/img/about.png') center left no-repeat;
+  }
+  #contact li .code-of-conduct {
+    background: url('/img/code-of-conduct.png') center left no-repeat;
+  }
+  #location .wrapper {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+  }
+  #location-abstract .col {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+    text-align: left;
+    padding: 0 10px;
+  }
+  #venue .wrapper {
+    display: inline;
+    float: left;
+    width: 83.33333333%;
+    margin: 0 ;
+    margin-left: 8.33333333%;
+  }
+  #venue-abstract .col {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+    margin: 0 0 20px 0;
+  }
+  #venue-abstract .col:first-child {
+    text-align: center;
+  }
+  #venue-abstract .col:first-child img {
+    width: 100%;
+  }
+  #stay .wrapper {
+    display: inline;
+    float: left;
+    width: 83.33333333%;
+    margin: 0 ;
+    margin-left: 8.33333333%;
+  }
+  #stay-abstract .col {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+    margin: 0 0 20px 0;
+  }
+  #stay-abstract .col:first-child {
+    text-align: center;
+  }
+  #stay-abstract .col:first-child img {
+    width: 100%;
+  }
+  #conference .wrapper,
+  #workshops .wrapper,
+  #conduction .wrapper,
+  #header .wrapper {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+  }
+  #conduction-longtext .col {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+    text-align: left;
+    padding: 0 10px;
+  }
+  .session {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+    background: url('/img/filetto.png') bottom center no-repeat;
+  }
+  .session .speaker {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+  }
+  .session .speaker .image {
+    display: inline;
+    float: left;
+    width: 25%;
+    margin: 0 ;
+  }
+  .session .speaker .image img {
+    width: 100%;
+  }
+  .session .speaker .info {
+    display: inline;
+    float: left;
+    width: 75%;
+    margin: 0 ;
+    padding: 0 20px;
+  }
+  .session .speaker .info .name {
+    text-align: left;
+  }
+  .session .speaker .info .twitter {
+    text-align: left;
+  }
+  .session .topic {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+    padding: 0 20px;
+  }
+  #about-us-crew .session .speaker .image {
+    width: 20%;
+  }
+  .schedule-session {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .schedule-session .hour {
+    font-family: PlutoSansLight, serif;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+  .schedule-session .image {
+    padding: 0 20px;
+  }
+  .schedule-session .image img {
+    width: 100%;
+    max-width: 183px;
+  }
+  .schedule-session .topic .title {
+    font-family: PlutoSansBold, serif;
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 ;
+    margin-left: 16.66666667%;
+  }
+  #header #logo {
+    left: 10px;
+  }
+  #header .toggleMenu {
+    display: none;
+  }
+  #header .pastEditionMenu {
+    float: right;
+    color: #ffffff;
+    display: inline;
+  }
+  #header #nav-primary {
+    display: block;
+  }
+  #header #nav-primary ul {
+    border-top: 0;
+    padding: 0 0 0 85px;
+  }
+  #header #nav-primary li {
+    background: transparent;
+    display: inline-block;
+    border-bottom: 0;
+  }
+  #header #nav-primary li a {
+    display: block;
+    color: #f8f7f4;
+    padding: 15px 15px 13px 0;
+  }
+  #header #nav-primary .pastEditionMenu li a {
+    padding: 15px 5px 0 0;
+  }
+  #what h2 {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 27px;
+    line-height: 1em;
+  }
+  #what h2 b {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  #what .short {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+    margin-left: 25%;
+  }
+  #what .abstract p.col {
+    display: inline;
+    float: left;
+    width: 33.33333333%;
+    margin: 0 0%;
+  }
+  #what h3 {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 42px;
+    line-height: 1em;
+  }
+  #calling #subscription-box {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 ;
+    margin-left: 16.66666667%;
+  }
+  #calling #subscription-box input[type=email] {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  #calling #subscription-box input[type=submit] {
+    font-family: PlutoSansBold, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+  #contact .wrapper {
+    display: inline;
+    float: left;
+    width: 83.33333333%;
+    margin: 0 ;
+    margin-left: 8.33333333%;
+  }
+  #contact .col {
+    text-align: left;
+    display: inline;
+    float: left;
+    width: 25%;
+    margin: 0 ;
+  }
+  #location-abstract {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 ;
+    margin-left: 16.66666667%;
+    padding: 50px 0;
+  }
+  #location-abstract .col {
+    display: inline;
+    float: left;
+    width: 33.33333333%;
+    margin: 0 ;
+    text-align: left;
+    padding: 0 10px;
+  }
+  #location-abstract .col:last-child {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 0%;
+  }
+  #speakers #speakers-list li {
+    display: inline;
+    float: left;
+    width: 33.33333333%;
+    margin: 0 ;
+    display: inline-block;
+    float: none;
+    margin: 0 0 0 -4px;
+  }
+  #venue-abstract {
+    display: inline;
+    float: left;
+    width: 83.33333333%;
+    margin: 0 ;
+    margin-left: 8.33333333%;
+  }
+  #venue-abstract .col {
+    display: inline;
+    float: left;
+    width: 41.66666667%;
+    margin: 0 ;
+    margin: 0 0 40px 0;
+  }
+  #venue-abstract .col:first-child {
+    display: inline;
+    float: left;
+    width: 33.33333333%;
+    margin: 0 ;
+  }
+  #venue-abstract .col:last-child {
+    display: inline;
+    float: left;
+    width: 25%;
+    margin: 0 ;
+  }
+  #venue-abstract .col:first-child {
+    text-align: center;
+  }
+  #venue-abstract .col:first-child img {
+    width: 90%;
+  }
+  #stay-abstract {
+    display: inline;
+    float: left;
+    width: 83.33333333%;
+    margin: 0 ;
+    margin-left: 8.33333333%;
+    padding: 50px 0;
+  }
+  #stay-abstract .col {
+    display: inline;
+    float: left;
+    width: 33.33333333%;
+    margin: 0 ;
+    text-align: left;
+    padding: 0 10px;
+  }
+  #stay-abstract .col:first-child {
+    text-align: center;
+  }
+  #stay-abstract .col:first-child img {
+    width: 90%;
+  }
+  #stay-abstract .col:last-child {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 0%;
+  }
+  #conference .wrapper,
+  #workshops .wrapper,
+  #schedule .wrapper,
+  #header .wrapper {
+    display: inline;
+    float: left;
+    width: 83.33333333%;
+    margin: 0 ;
+    margin-left: 8.33333333%;
+  }
+  #workshops .workshop-video {
+    display: block;
+    width: 520px;
+    height: 290px;
+  }
+  #schedule {
+    padding: 30px 0 90px 0;
+    background-color: #f8f7f4;
+    margin-top: 50px;
+  }
+  #schedule h2 {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  #schedule h3 {
+    background: url('/img/filetto.png') bottom center no-repeat;
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+    font-family: PlutoSansBold, sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+  }
+  #conduction-longtext {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 ;
+    margin-left: 16.66666667%;
+    padding: 50px 0;
+  }
+  #conduction-longtext .col {
+    display: inline;
+    float: left;
+    width: 33.33333333%;
+    margin: 0 ;
+    text-align: left;
+    padding: 0 10px;
+  }
+  #conduction-longtext .col:last-child {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 0%;
+  }
+  .session .speaker {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+  }
+  .session .speaker .image {
+    display: inline;
+    float: left;
+    width: 33.33333333%;
+    margin: 0 ;
+  }
+  .session .speaker .image img {
+    width: 100%;
+  }
+  .session .speaker .info {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 ;
+  }
+  .session .speaker .info .name {
+    text-align: left;
+    min-height: 30px;
+  }
+  .session .speaker .info .twitter {
+    text-align: left;
+    min-height: 40px;
+  }
+  .session .topic {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+  }
+  .session .topic .title {
+    min-height: 65px;
+  }
+  #schedule .schedule-session {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  #schedule .schedule-session .hour {
+    display: inline;
+    float: left;
+    width: 16.66666667%;
+    margin: 0 0%;
+    font-family: PlutoSansLight, serif;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+  #schedule .schedule-session .image {
+    display: inline;
+    float: left;
+    width: 16.66666667%;
+    margin: 0 0%;
+    padding: 0 20px;
+  }
+  #schedule .schedule-session .image img {
+    width: 100%
+					display: block;
+  }
+  #schedule .schedule-session .topic {
+    display: inline;
+    float: left;
+    width: 66.66666667%;
+    margin: 0 0%;
+    text-align: left;
+  }
+  #schedule .schedule-session .topic .title {
+    font-family: PlutoSansBold, serif;
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+}
+.fixed {
+  position: fixed;
+  border-top: 10px solid #f8f7f4;
+  top: 0;
+}
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+}
+.tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+.tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #000000;
+  border-width: 5px 5px 0;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-right-color: #000000;
+  border-width: 5px 5px 5px 0;
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-left-color: #000000;
+  border-width: 5px 0 5px 5px;
+}
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #000000;
+  border-width: 0 5px 5px;
+}
+.sponsor-ws {
+  margin-top: 25px;
+}
+.sponsor-ws img {
+  max-width: 250px;
+  margin-top: 0px;
+}
+@media screen and (min-width: 1240px) {
+  #what h3 {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 51px;
+    line-height: 1em;
+  }
+}

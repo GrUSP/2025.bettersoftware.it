@@ -1,0 +1,41 @@
+<div class="section" id="speakers">
+		<div class="wrapper">
+			<h2>Speakers</h2>
+
+			<ul id="speakers-list">
+        {% for speaker in site.data.speakers %}
+
+				{% if speaker.twitter != false %}
+                <li>
+					<a href="speakers.html#{{ speaker.id }}">
+						<img src="{{ speaker.image }}">
+						<span>{{ speaker.name }}</span>
+					</a>
+				</li>
+
+				{% else %}
+				<li>
+					<img src="/img/speaker-plc.png">
+					<span>To be<br>announced<br></span>
+				</li>
+        {% endif %}
+
+        {% endfor %}
+</ul><h2>Masters of Ceremony</h2>
+
+			<ul id="speakers-list">	<li>
+					<img src="/img/2024/adriana-versino.jpg">
+					<span>Adriana Versino</span>
+				</li>
+				<li>
+					<img src="/img/2024/francesco-fullone.jpg">
+					<span>Francesco Fullone</span>
+				</li>
+			
+			</ul>
+
+			{% if false %}
+				<div class="more">&hellip;more to be announced soon!</div>
+			{% endif %}
+		</div>
+	</div>

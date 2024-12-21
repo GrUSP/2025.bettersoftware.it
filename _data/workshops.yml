@@ -1,0 +1,40 @@
+- name: VecchiaStamperia
+  title: "5th June - Playing with a (Heidelberg) Windmill a Damiano Bandini's workshop"
+  image: /img/2019/ws/damiano.png
+  twitter: vecchiastamperia
+  duration: 1 day
+  when: 5th of June 2019
+  where: "The workshop will take place at: La vecchia stamperia<br/>Via Giulio Castellani 25<br/>Faenza (RA)"
+  map: https://www.google.com/maps/place/La+Vecchia+Stamperia+di+Damiano+Bandini/@44.284726,11.87984,16z/
+  anchor: stamperia
+  url: ws-letterpress.html
+- name: "Bruno Maag & Richard Bailey"
+  title: "5th-6th June - STRAIGHTS AND ROUNDS with Richard Bailey and Bruno Maag"
+  image: /img/2019/ws/bruno-richard.png
+  twitter: bruno_maag
+  duration: 2 days
+  when: from 5th to 6th of June 2019
+  where: "The workshop will take place at: Biblioteca Comunale di Faenza (1st Floor)<br/>Via Manfredi n. 14<br/>Faenza (RA)"
+  map: https://www.google.it/maps/place/Via+Manfredi,+14,+48018+Faenza+RA
+  anchor: daltonmaag
+  url: ws-fontchoosing.html
+- name: "Lila Symons"
+  title: "5th-6th June - Design a Script Typeface with Lila Symons"
+  image: /img/2019/ws/lila.png
+  twitter: daycalligraphy
+  duration: 2 days
+  when: from 5th to 6th of June 2019
+  where: "The workshop will take place at: Biblioteca Comunale di Faenza (1st Floor)<br/>Via Manfredi n. 14<br/>Faenza (RA)"
+  map: https://www.google.it/maps/place/Via+Manfredi,+14,+48018+Faenza+RA
+  anchor: daycalligraphy
+  url: ws-variablefonts.html
+- name: "Monica Dengo"
+  title: "5th-6th June - NEW ALPHABETICAL FORMS Out of the typographic logic with Monica Dengo"
+  image: /img/2019/ws/monica.png
+  twitter: MonicaDengo
+  duration: 2 days
+  when: from 5th to 6th of June 2019
+  where: "The workshop will take place at: Complesso dei Salesiani<br>Via San Giovanni Bosco n. 1<br/>Faenza (RA)"
+  map: https://www.google.com/maps/place/Via+san+Giovanni+Bosco,+1/@44.2832168,11.8849821,16z
+  anchor: dengo
+  url: ws-calligraphy.html

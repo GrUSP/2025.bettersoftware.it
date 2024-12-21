@@ -1,0 +1,19 @@
+---
+layout: layout
+title: home
+ttl: Location and Venue
+---
+
+{%  include section-header.html %}
+{%  include section-location.html %}
+{%  include section-venue.html %}
+{% if site.location-stay %}
+    {%  include section-stay.html %}
+{% endif %}
+
+{% if site.sponsors %}
+  {% include section-sponsors.html %}
+{% endif %}
+
+{%  include section-newsletter.html %}
+{%  include section-contact.html %}

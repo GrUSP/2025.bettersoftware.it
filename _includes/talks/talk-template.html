@@ -1,0 +1,47 @@
+{% assign not_announced_speakers = site.data.speakers | where:"name","tba" | size %}
+
+<!--div class="session">|
+{% for speaker in site.data.speakers %}
+    {% if speaker.title != false %}
+        <a href="#{{ speaker.twitter }}" class="" style="font-size: 0.8em" title="{{ speaker.title }}">{{ speaker.name }}</a> |
+    {% endif %}
+{% endfor %}
+</div-->
+
+{% for speaker in site.data.speakers %}
+{% if speaker.id %}
+<div class="session" id="{{ speaker.id }}">
+    <div class="speaker" {% if site.talks == false %} style="width:100%" {% endif %}>
+        <div class="image"><img src="{{ speaker.image }}"></div>
+        <div>&nbsp;</div>
+        <div class="info">
+            <div class="name">{{ speaker.name }}</div>
+            <p class="work">{{ speaker.works }}</p>
+            <div class="bio">
+                {{ speaker.bio }}
+            </div>
+        </div>
+    </div>
+
+    {% if site.talks %}
+    <div class="topic">
+        <div class="title">{{ speaker.title }}</div>
+        <div class="abstract">
+
+            {% if speaker.video %}
+                <iframe src="https://player.vimeo.com/video/{{ speaker.video }}" width="500" height="281" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            {% endif %} 
+
+            <p>{{ speaker.abstract }}</p>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+{% endif %}
+{% endfor %}
+
+
+{% unless not_announced_speakers == 0 %}
+  {% include talks/talk-placeholder.html %}
+{% endunless %}

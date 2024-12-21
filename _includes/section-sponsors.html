@@ -1,0 +1,94 @@
+<div class="section" id="sp"><a id="sponsor"></a>
+		<div class="wrapper">
+			<h2>Sponsors</h2>
+
+			<h3 class="greatprimer">Diamond</h3>
+			<div class="s-block great">
+
+                {% for sponsor in site.data.sponsors.greatprimer %}
+
+				<a href="{{ sponsor.href }}?utm_source=bsw"><img src="{{ sponsor.img }}" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="{{ sponsor.title }}"></a>
+
+                {% endfor %}
+
+                {% assign greatprimer = site.data.sponsors.greatprimer | size %}
+                {% if site.cfs and greatprimer < 1 %}
+				<img src="/img/great-plc.png" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="This space is awaiting you!">
+                {% endif %}
+			</div>
+
+			<h3 class="pica">Platinum</h3>
+			<div class="s-block pica">
+
+                {% for sponsor in site.data.sponsors.pica %}
+
+				<a href="{{ sponsor.href }}?utm_source=bsw"><img src="{{ sponsor.img }}" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="{{ sponsor.title }}" alt="{{ sponsor.title }}"></a>
+
+                {% endfor %}
+
+
+                {% if site.cfs %}
+				<img src="/img/pica-plc.png" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="This space is awaiting you!">
+                {% endif %}
+			</div>
+
+			<h3 class="bourgeois">Gold</h3>
+			<div class="s-block bourgeois">
+
+				{% for sponsor in site.data.sponsors.bourgeois %}
+
+				<a href="{{ sponsor.href }}?utm_source=bsw"><img src="{{ sponsor.img }}" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="{{ sponsor.title }}" alt="{{ sponsor.title }}"></a>
+
+                {% endfor %}
+
+                {% if site.cfs %}
+				<img src="/img/bourgeois-plc.png" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="This space is awaiting you!">
+                {% endif %}
+
+			</div>
+
+            <h3 class="brevier">Silver</h3>
+            <div class="s-block brevier">
+                {% for sponsor in site.data.sponsors.brevier %}
+
+				<a href="{{ sponsor.href }}?utm_source=bsw"><img src="{{ sponsor.img }}" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="{{ sponsor.title }}" alt="{{ sponsor.title }}"></a>
+
+                {% endfor %}
+
+                {% if site.cfs %}
+				<img src="/img/bourgeois-plc.png" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="This space is awaiting you!">
+                {% endif %}
+            </div>
+
+			<h3 class="minion">Bronze</h3>
+			<div class="s-block minion">
+                {% for sponsor in site.data.sponsors.minion %}
+
+				<a href="{{ sponsor.href }}?utm_source=bsw"><img src="{{ sponsor.img }}" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="{{ sponsor.title }}" alt="{{ sponsor.title }}"></a>
+
+                {% endfor %}
+
+                {% if site.cfs %}
+				<img src="/img/minion-plc.png" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="This space is awaiting you!">
+                {% endif %}
+
+			</div>
+
+			<h3 class="media">Media Partners</h3>
+			<div class="s-block media">
+				{% for sponsor in site.data.sponsors.media %}
+					<a href="{{ sponsor.href }}?utm_source=bsw"><img src="{{ sponsor.img }}" class="sponsor-tooltip" data-toggle="tooltip" data-placement="top" data-title="{{ sponsor.title }}" alt="{{ sponsor.title }}"></a>
+				{% endfor %}
+			</div>
+			<h3 class="media">Patronage</h3>
+			<div class="s-block media">
+                <a href="https://www.grusp.org"><img src="/img/media-grusp-white.png" alt="GrUSP"></a>
+				<a href="https://apropos.srl"><img src="/img/2024/s/apropos.svg" alt="Apropos Srl"></a>
+			</div>
+
+			<div class="become-sponsor">
+				<span>Interested in sponsoring next {{ site.conference-name }}?</span><br>
+				<a href="mailto:{{ site.conference-email }}?subject=Sponsorship+BetterSoftware">Contact us!</a>
+			</div>
+		</div>
+	</div>

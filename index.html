@@ -1,0 +1,32 @@
+---
+layout: layout
+title: home
+ttl:
+---
+
+{% include section-header.html %}
+
+{% if site.cfs %}
+    {% include section-CFP.html %}
+{% endif %}
+
+{% include section-content.html %}
+{% include section-newsletter.html %}
+
+{% if site.speakers %}
+    {% include section-home-speakers.html %}
+{% endif %}
+
+{% if site.workshops %}
+    {% include section-home-workshops.html %}
+{% endif %}
+
+{% if site.tickets %}
+  {% include section-tickets.html %}
+{% endif %}
+
+{% if site.sponsor %}
+  {% include section-sponsors.html %}
+{% endif %}
+
+{% include section-contact.html %}

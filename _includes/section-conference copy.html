@@ -1,0 +1,37 @@
+<div class="section" id="conference">
+	<div class="wrapper">
+		<div class="section" id="content">
+			<div class="wrapper">
+				<section id="ribbon">
+					<span id="where">{{ site.city }}<i>Italy</i></span>
+					<span id="season">{{ site.date }}</span>
+					<span id="year">{{ site.year }}</span>
+				</section>
+				<section id="what">
+					<h1><span>{{ site.conference-name }}</span></h1>
+							<h3>{{ site.conference-title }}</h3>
+					<h2>{{ site.conference-motto }}</h2>
+	
+					<hr>
+					<div class="short">{{ site.conference-name }} is the first international conference in Italy dedicated solely to new topics and trends about the software industry.</div>
+					<div class="abstract">
+						<p class="col">
+						On <b>October 11th {{ site.year }}</b> we will gather <b>in Bologna, in the very heart of Italy</b>, top notch speakers from the whole world of digital to create an unique&nbsp;event.</p>
+						<p class="col">
+						 {{ site.conference-name }} features two days of workshops (June 5th and 6th) and a Conference day full of talks (June 7th). {{ site.conference-name }} offers a very interesting chance to meet developers, gurus, managers and innovators from all over the&nbsp;world.</p>
+						<p class="col">
+						{{ site.conference-name }} is a non-profit event. We want to help grow a community of prepared developers keeping knowledge affordable: that’s why <b>normal conference ticket costs just Eur. 195.00 (VAT&nbsp;excluded).</b></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+        {% include talks/talk-template.html %}
+
+		<div id="conference-abstract">
+            {% if false %}
+                  {% include talks/talk-placeholder.html %}
+            {% endif %}
+		</div>
+	</div>
+</div>
