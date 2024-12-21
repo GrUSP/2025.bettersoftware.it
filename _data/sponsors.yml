@@ -5,10 +5,6 @@ pica:
     img: /img/2024/s/daruma.svg
     title: "Sustainable IT e Green Software consulting."
 bourgeois:
-  - name: Credem
-    href: https://www.credem.it/
-    img: /img/2024/s/credem.svg
-    title: "Credem Banca"
 
 #  - name: klim
 #    href: http://klim.co.nz/?utm_source=kerningconf
@@ -21,11 +17,6 @@ bourgeois:
 
 
 brevier:
-  - name: Seeweb
-    href: https://www.seeweb.it/
-    img: /img/2024/s/seeweb.svg
-    title: "Seeweb"
-
   - name: Workwave
     href: https://www.workwave.com/
     img: /img/2024/s/workwave.svg
@@ -37,15 +28,6 @@ brevier:
 #    title:  Zetafonts a font foundry created by Francesco Canovaro, Cosimo Lorenzo Pancini and Debora Manetti.
 
 minion:
-  - name: Miaplatform
-    href: https://mia-platform.eu/it/
-    img: /img/2024/s/miaplatform.png
-    title: "Mia-Platform"
-
-  - name: Stickermule
-    href: https://www.stickermule.com/eu/uses?utm_source=sponsorship&utm_medium=referral&utm_campaign=AproposSrl
-    img: //grusp.org/img/media-partners/stickermule.svg
-    title: "StickerMule"
 
 #  - name: serif
 #    href:  https://affinity.serif.com/
