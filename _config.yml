@@ -21,7 +21,7 @@ scholarships: true
 schedule: false
 sponsor: true
 location-stay: false
-cfs: true
+cfs: false
 cfs-end: "6 Giugno 2025"
 cfs-link: https://sessionize.com/bettersoftware-2025
 rdiscount:
