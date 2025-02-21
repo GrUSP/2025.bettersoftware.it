@@ -10,7 +10,7 @@ conference-x: better_software
 city: "Torino"
 date: "3 Ott"
 year: 2025
-tickets: false
+tickets: true
 tickets-eb: grusp/bettersoftware-2025
 tickets-eb-link: http://ti.to/grusp/bettersoftware-2025
 tickets-eb-height: 950px
@@ -21,7 +21,7 @@ scholarships: true
 schedule: false
 sponsor: true
 location-stay: false
-cfs: false
+cfs: true
 cfs-end: "6 Giugno 2025"
 cfs-link: https://sessionize.com/bettersoftware-2025
 rdiscount:
